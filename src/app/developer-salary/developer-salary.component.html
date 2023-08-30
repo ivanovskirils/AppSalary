@@ -1,0 +1,17 @@
+<h2>High Salary Developers</h2>
+<table>
+  <tr>
+    <th>Developer Name</th>
+    <th>Developer Salary</th>
+    <th>Manager Name</th>
+    <th>Manager Salary</th>
+    <th>Department</th>
+  </tr>
+  <tr *ngFor="let dev of highSalaryDevelopers">
+    <td>{{ dev.firstName }} {{ dev.lastName }}</td>
+    <td>{{ dev.salary }}</td>
+    <td>{{ dev.manager.firstName }} {{ dev.manager.lastName }}</td>
+    <td>{{ dev.manager.salary }}</td>
+    <td>{{ dev.department.name }}</td>
+  </tr>
+</table>
